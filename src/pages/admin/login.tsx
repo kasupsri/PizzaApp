@@ -11,8 +11,7 @@ const Login = () => {
 
   const handleClick = async () => {
     try {
-      let url = process.env.URL;
-      await axios.post(`${url}/api/login`, {
+      await axios.post("http://localhost:3000/api/login", {
         username,
         password,
       });
